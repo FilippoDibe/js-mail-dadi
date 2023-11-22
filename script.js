@@ -19,6 +19,12 @@ function estrazione (){
     pc = numeri[Math.floor(Math.random() * (numeri.length - 1)) + 1];
     return {user, pc};
 }
+// funzione del click del bottone 
+function start(){
     const numeriCasuali = estrazione();
     console.log("Numero casuale a:", user);
     console.log("Numero casuale b:", pc);
+}
+// collegamento funzione e bottone 
+document.getElementById("start").addEventListener("click", start);
+
