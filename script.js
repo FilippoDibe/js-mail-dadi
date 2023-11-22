@@ -2,6 +2,20 @@
 // controlla che sia nella lista di chi può accedere, 
 // stampa un messaggio appropriato sull’esito del controllo.
 
+// creazione lista 
+const invitati = [ "lorenzo@gmail.com", "filippo@gmail.com", "mirko@gmail.com", "gigifinizio@gmail.com"]
+
+// richiesta mail utente 
+const email = prompt("inserisci la tua mail");
+
+if( invitati.includes(email)){
+    let text = "benvenuto nell'area riservata "+  email;
+    console.log(text);
+}else{
+    let text = " non puoi accedere qui ciaooo"
+    console.log(text);
+}
+
 
 
 
